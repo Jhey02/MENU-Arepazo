@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(252, 140, 59);
+   
+}
+
+
+
+body{
+     border-color: white;
+  border-width: 6px;
+  border-style: inset;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: white;
+}
+
+.br{
+    display: block;
+  content: "";
+  margin-top: 1em;
+  width: 80%;
+  height: 2px;
+  background-color: black;
+}
+
+.lista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas de igual tamaño */
+    gap: 10px;
+    justify-items: center; /* Centrar horizontalmente */
+  align-items: center;
+    list-style-type: none;
+    margin: 2%;
+    
+}
+
+
+.card{
+    border-color: white;
+    border-width: 1px;
+    border-style: inset;
+    padding: 0.7em;
+    margin: 2em;
+    display: none;
+  
+}
+
+.card:hover  {
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+.card:hover .precio{
+    width: 90px;
+    height: 40px;
+}
+
+.lista li a{
+    text-decoration: none;
+    color: white;
+}
+.menu-item{
+    border: 2px solid white; 
+    border-radius: 10px;
+    width: 110px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+.menu-item:hover{
+    font-size: 1.5em;
+    width: 170px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+
+.precio{
+    color: white;
+    border-radius: 40px ;
+    background-color: rgba(73, 33, 0, 0.575);
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.ContainerCard{
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-sub{
+    color: white;
+    border-radius: 30px;
+    padding: 0.3em;
+    margin: 0.1em;
+    width:300px;
+    text-align: center;
+    background-color: rgba(73, 33, 0, 0.575);
+    display: none;
+
+}
